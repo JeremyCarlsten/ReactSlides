@@ -1,0 +1,43 @@
+{
+  "name": "react-slides",
+  "version": "1.0.0",
+  "description": "A slideshow for a react talk",
+  "main": "app.js",
+  "scripts": {
+    "start": "watchify app/app.js -o dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeremyCarlsten/ReactSlides.git"
+  },
+  "keywords": [
+    "react",
+    "slide"
+  ],
+  "author": "JeremyCarlsten",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JeremyCarlsten/ReactSlides/issues"
+  },
+  "homepage": "https://github.com/JeremyCarlsten/ReactSlides#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.3",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.7.7",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.0",
+    "redux-devtools": "^3.2.0",
+    "watchify": "^3.7.0"
+  },
+  "browserify": {
+    "transform": [[ "babelify", { "presets": ["es2015","react"]}]]
+  }
+}
